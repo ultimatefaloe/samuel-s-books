@@ -8,3 +8,10 @@ git status
 git add .
 
 # To commit to git repo
+git commit -m 'message goes in here'
+
+# To push to git repo
+git push
+
+# To pull from repo
+git pull
