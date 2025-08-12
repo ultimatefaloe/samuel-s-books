@@ -1,6 +1,19 @@
 * {
     margin: 0%;
 }
+input {
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 2px gray;
+    border-radius: 15px;
+}
+label {
+    color: #12125a;
+}
+button {
+    cursor: pointer;
+    border-style: none;
+}
 body {
     margin-top: 50px;   
     background-image: linear-gradient( to top left, rgb(0, 0, 0), rgb(222, 220, 253)), url('./librabry.jpg');
@@ -432,4 +445,291 @@ footer {
 .footer_bottom h3 {
     padding: 10px 10px 10px 30%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head {
+    margin: 65px;
+    padding-top: 40px;
+}
+.head_title {
+    justify-items: center;
+}
+.head_title h3 {
+    font-size: 45px;
+    color: #12125a;
+    font-family: monospace;
+}
+.head_text {
+    justify-self: center;
+    justify-items: center;
+    font-size: 17px;
+    font-size: 20px;
+    padding: 10px;
+}
+.hero_header {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    justify-self: center;
+    align-items: center ;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+}
+.search {
+    background-color: #ffffff;
+    width: 450px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 2px grey;
+    border-color: #12125a;
+}
+.search input {
+    border-style: none;
+    color: #020279;
+    width: 450px;
+    border-radius: 20px;
+    border-color: #3030ff;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    outline-color: #020279;
+    font-size: 15px;
+    font-family: cursive;
+}
+.hero_header_nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6666a7;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: cursive;
+}
+.hero_form_section_and_account_stats_and_quick_actions {
+    display: flex;
+    justify-content: space-around;
+}
+.hero_form_section {
+    margin-top: 20px;
+    padding: 30px   0px 30px 0px;
+}
+.hero_form_header h3 {
+    font-size: 45px;
+    color: #12125a;
+    font-family: monospace;
+    padding: 5px;
+}
+.profile_form {
+    padding: 20px;
+    background-color: #fff;
+    width: 580px;
+}
+.form_title_text {
+    font-size: 28px;
+    color: #12125a;
+    align-self: center;
+}
+.form_title_button button {
+    border-style: none;
+    background-color: #d2dbf8;
+    color: #12125a;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+.form_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 20px 0px;
+}
+.input_for_firstname input{
+    width: 260px;
+    height: 37px;
+}
+.input_for_lastname input{
+    width: 260px;
+    height: 37px;
+}
+.email_input {
+    padding-bottom: 20px;
+}
+.input_for_email input{
+    height: 37px;
+    width: 560px;
+}
+.phone_input {
+    padding-bottom: 20px;
+}
+.input_for_phone input{
+    height: 37px;
+    width: 560px;
+}
+.address_input {
+    padding-bottom: 20px;
+}
+.input_for_address input{
+    height: 37px;
+    width: 560px;
+}
+.form_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}.input_for_city input{
+    width: 260px;
+    height: 37px;
+}
+.input_for_state input{
+    width: 260px;
+    height: 37px;
+}
+.account_stats_and_quick_actions {
+    display: grid;
+    margin-top: 20px;
+    padding: 80px 0px 30px 0px;
+}
+.account_stats{
+    background-color: #fff;
+    padding: 30px;
+    margin: 10px;
+}
+.account_stats_head h3 {
+    font-size: 28px;
+    color: #12125a;
+    align-self: center;
+}
+.account_stats_content {
+    padding: 30px;
+}
+.total_orders {
+    justify-self: center;
+    justify-items: center;
+    width: fit-content;
+}
+.total_orders h4 {
+    font-size: 24px;
+    color: #12125a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.total_orders p {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+.total_spent {
+    justify-self: center;
+    justify-items: center;
+    width: fit-content;
+}
+.total_spent h4 {
+    font-size: 24px;
+    color: #12125a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.total_spent p {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.member_since {
+    justify-self: center;
+    justify-items: center;
+    width: fit-content;
+}
+.member_since h4 {
+    font-size: 24px;
+    color: #12125a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.member_since p {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quick_actions {
+    width: 275px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+.quick_actions_head {
+    width: 230px;
+}
+.quick_actions_head h3 {
+    font-size: 24px;
+    color: #12125a;
+    align-self: center;
+}
+.quick_actions_content button{
+    border-style: none;
+    background-color: #d2dbf8;
+    color: #12125a;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+.footer_order_history {
+    background-color: #fff;
+    margin: 30px 200px 30px 100px;
+    padding: 20px;
+    width: 600px;
+}
+.footer_order_history_header {
+    padding: 20px;
+}
+.footer_order_history_header h3 {
+    font-size: 30px;
+    color: #12125a;
+    align-self: center;
+}
+.order_1 {
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 2px gray;
+    padding: 15px;
+    margin: 10px;
+}
+.status_delivered {
+    background-color: #8282ec;
+    border-radius: 5px;
+}
+.status_processing {
+    background-color: #fda92a;
+    border-radius: 5px;
+}
+.status_processing p {
+    padding: 5px;
+    color: #644311;
+}
+.status_delivered p {
+    padding: 5px;
+    color: #060635;
+}
+.name_date_and_price_status {
+    display: flex;
+    justify-content: space-between;
+}
+.price h4{
+    color: #020279;
+    padding: 5px;
+}
+.items {
+    padding: 10px;
+}
+.order_2 {
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 2px gray;
+    padding: 15px;
+    margin: 10px;
+}
+.order_3 {
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 2px gray;
+    padding: 15px;
+    margin: 10px;
 }
