@@ -7,8 +7,10 @@
 input {
     border-style: none;
     background-color: #fff;
-    box-shadow: 3px 3px 8px 2px gray;
-    border-radius: 15px;
+    box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.05);
+    border-radius: 8px;
+    outline: 1px solid rgb(182, 182, 182);
+    box-sizing: border-box;
 }
 label {
     color: #12125a;
@@ -391,45 +393,19 @@ footer {
     padding: 20px;
     background-color: #fff;
 }
-.form_title_text {
-    font-size: 28px;
-    color: #12125a;
-    align-self: center;
+.input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input {
+    width: 90%;
+    padding: 10px 10px;
 }
-.form_title_button button {
-    border-style: none;
-    background-color: #d2dbf8;
-    color: #12125a;
-    padding: 10px;
-    border-radius: 20px;
-    width: 100px;
-    font-size: 15px;
+.email_input, .phone_input, .address_input, .password_input  {
+    padding: 10px 0;
 }
-.form_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.input_for_email input, .input_for_phone input, .input_for_address input, .input_for_password {
+    width: 95%;
+    padding: 10px 10px;
 }
-.form_top {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0px 20px 0px;
-}
-.input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input{
-    width: 260px;
-    height: 37px;
-}
-.email_input, .phone_input, .address_input  {
-    padding-bottom: 20px;
-}
-.input_for_email input, .input_for_phone input, .input_for_address input{
-    height: 37px;
+table {
     width: 100%;
-}
-.form_bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px;
 }
 .account_stats_and_quick_actions {
     display: grid;
@@ -437,7 +413,7 @@ footer {
 .account_stats{
     background-color: #fff;
     padding: 30px;
-    margin: 62px 10px 10px 10px;
+    margin: opx 10px 10px 10px;
 }
 .account_stats_head h3 {
     font-size: 28px;
@@ -566,7 +542,7 @@ footer {
     padding: 15px;
     margin: 10px;
 }
-.sign_in_hero {
+.sign_in_hero, .sign_up_hero{
     background-color: #fff;
     width: fit-content;
     justify-self: center;
@@ -574,31 +550,34 @@ footer {
     padding: 30px;
     width: 40%;
 }
-.sign_in_header h1 {
+.sign_in_header h1, .sign_up_header h1 {
     justify-self: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #060635;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.sign_in_description p{
+.sign_in_description p, .sign_up_description p {
     justify-self: center;
     font-size: 15px;
     padding: 20px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.sign_in_button{
+.sign_in_button, .sign_up_button{
     justify-self: center;
-    padding: 5px;
+    padding: 15px;
     width: 100%;
 }
-.sign_in_button button {
+.sign_in_button button, .sign_up_button button {
     width: 80%;
     padding: 10px;
     margin-left: 40px;
     border-radius: 10px;
-    background-color: #a0a0f7;
+    background-color: #8181c9;
     box-shadow: 3px 3px 8px 2px rgba(128, 128, 128, 0.363);
+}
+.sign_in_button button:hover, .sign_up_button button:hover{
+     background-color: #a0a0f7;
 }
 .sign_in_footer {
     justify-content: center;
@@ -622,7 +601,16 @@ footer {
     height: auto;
     padding: 10px;
 }
-
+.input_for_password input, .input_for_confirm_password input {
+    width: 100%;
+    height: 37px;
+}
+.sign_up_form_top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
 @media screen and (max-width: 786px) {
    .hero {
     display: block;
@@ -676,5 +664,8 @@ footer {
    }
    .hero_search {
    padding: 0px;
+    }
+    .sign_in_hero {
+        width: 70%;
     }
 }
