@@ -12,6 +12,9 @@ input {
     outline: 1px solid rgb(182, 182, 182);
     box-sizing: border-box;
 }
+table {
+    height: 90%;
+}
 label {
     color: #12125a;
 }
@@ -19,9 +22,26 @@ button {
     cursor: pointer;
     border-style: none;
 }
+#cart :hover, #profile :hover{
+    background-color: #af73f377;
+    padding: 10px;
+    border-radius: 5px;
+}
+#sign_in :hover {
+    background-color: #af73f377;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+#sign_in a {
+    border: 1px solid rgb(24, 17, 134) ;
+    padding: 5px;
+    border-radius: 5px;
+}
 body {
     margin-top: 50px;   
-    background-image: linear-gradient( to top left, rgb(0, 0, 0), rgb(222, 220, 253)), url('./librabry.jpg');
+    background-color: #fff;
+    background: linear-gradient(to top right, rgb(255, 248, 248), rgb(8, 8, 56));
     box-shadow: 1px 2px 8px 2px #808080ab;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,9 +52,9 @@ header {
    background-color: #ffffff;
    box-shadow: 1px 2px 8px 2px #808080ab;
    position: fixed;
-   top: 1px;
-   right: 1px;
-   left: 1px;
+   top: 0;
+   right: 0;
+   left: 0;
    z-index: 99;
    width: auto;
 }
@@ -47,12 +67,27 @@ nav {
     display: inline-block; 
 }
 .right_nav ul li a {
+    position: relative;
     text-decoration: none;
     color: #12125a;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding: 10px;
+    transition: 1s all ease-out;
+}
+.right_nav ul li a::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: ''; 
+    width: 0;
+    height: 3px;
+    background-color: #060635; ;
+}
+.right_nav ul li a:hover{
+    color: #e1e1f7;
+    width: 100%;
 }
 .right_nav {
     margin-left: 500px;
@@ -92,7 +127,7 @@ nav {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
-    line-height: 30px;
+    line-height: 20px;
 }
 .action {
     display: flex;
@@ -116,6 +151,8 @@ nav {
     border-style: none;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background-color:  #12125abd;
+    color: #fff;
 }
 .browse_products button p {
     font-size: 15px;
@@ -126,12 +163,16 @@ nav {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
+.view_cart:hover  button {
+    background-color: #af73f377;
+}
 .view_cart button {
     width: 150px;
     height: 44px;
     border-style: none;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 1px solid rgb(24, 17, 134) ;
 }
 .right_hero{
     display: flex;
@@ -175,7 +216,8 @@ nav {
 .featured_books {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px;
+    margin: 0px;    
+    justify-content: center;
 }
 .inspirational_section, .educational_section, .romance_section {
     display: grid;
@@ -188,8 +230,16 @@ nav {
     box-shadow: 5px 5px 10px 2px rgba(128, 128, 128, 0.144);
     transition: 0.5s all ease-out;
 }
-.inspirational_section:hover, .educational_section:hover, .romance_section:hover {
+.inspirational_section:hover, 
+.educational_section:hover, 
+.romance_section:hover{
     transform: translate(0px, -10px);
+    box-shadow: 0px 10px 20px 2px rgba(128, 128, 128, 0.452);
+}
+.inspirational_section:hover img, 
+.educational_section:hover img, 
+.romance_section:hover img {
+    transform: scale(110%);
 }
 .featured_grid {
     width: fit-content;
@@ -206,9 +256,6 @@ nav {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     transition: 0.5s all ease-out;
-}
-.inspirational_image img:hover, .educational_image img:hover, .romance_image img:hover {
-    transform: scale(110%);
 }
 .inspirational_header, .educational_header, .romance_header {
     background-color: #e1e1f7;
@@ -265,9 +312,14 @@ nav {
     height: 34px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #e1e1f7;
+    background-color: #3f3f88;
     border-style: none;
 } 
+.inspirational_pricing_action button:hover,
+.educational_pricing_action button:hover,
+.romance_pricing_action button:hover {
+    background-color: #a0a0f7;
+}
 .educational_title h2 {
     padding: 10px 0px 10px 67px;
 }
@@ -388,10 +440,12 @@ footer {
     color: #12125a;
     font-family: monospace;
     padding: 5px;
+    justify-self: center;
 }
 .profile_form {
     padding: 20px;
     background-color: #fff;
+    height: 100%;
 }
 .input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input {
     width: 90%;
@@ -409,6 +463,7 @@ table {
 }
 .account_stats_and_quick_actions {
     display: grid;
+    margin: 5px 5px 5px 10px;
 }
 .account_stats{
     background-color: #fff;
@@ -578,6 +633,7 @@ table {
 }
 .sign_in_button button:hover, .sign_up_button button:hover{
      background-color: #a0a0f7;
+     box-shadow: 0px 4px 8px 2px rgba(128, 128, 128, 0.363);
 }
 .sign_in_footer {
     justify-content: center;
@@ -667,5 +723,8 @@ table {
     }
     .sign_in_hero {
         width: 70%;
+    }
+    .hero_form_section_and_account_stats_and_quick_actions {
+        display: block;
     }
 }
