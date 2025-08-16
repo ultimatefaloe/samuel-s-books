@@ -32,6 +32,21 @@ function performTask(e){
   value += num;
 }
 
+// value = "15+25"
+function delValue (e) {
+  e.preventDefault()
+
+  if(value !== null){
+    value = value.slice(0, -1)
+    screenInput.innerText = value
+    console.log(value)
+    return value
+  } else {
+    console.log(value);
+    console.log("No value is provided")
+  }
+}
+
 one.addEventListener('click', (e)=>{
     performTask(e)
 })
@@ -79,6 +94,9 @@ percent.addEventListener('click', (e)=>{
 })
 point.addEventListener('click', (e)=>{
   performTask(e)
+})
+del.addEventListener('click', (e)=>{
+  delValue(e)
 })
 clear.addEventListener('click', (e)=> {
   var ce = e.target.value;
