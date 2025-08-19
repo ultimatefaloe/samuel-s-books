@@ -5,9 +5,10 @@ body {
     height: 100%;
 }
 .buttons {
-    display: grid;
-    place-items: center;
+    display: flex;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 #screenInput, #screenResult{
     height: 40px;
@@ -16,14 +17,16 @@ body {
 }
 table {
     border: 1px solid rgb(99, 6, 6);
+    width: 100%;
+    height: 30%;
 }
-button {
+/* button {
     border-style: none;
     background-color: rgb(95, 3, 3);
     color: rgb(255, 255, 255);
     transition: 0.2s all ease-out;
     border-radius: 5px;
-}
+} */
 button:hover {
     background-color: rgb(235, 118, 118);
 }
@@ -31,4 +34,35 @@ button:hover {
     height: 50px;
     width: 30px;
     font-size: 20px;
+}
+.aaa {
+    width: 20%;
+    height: 30%;
+}
+input {
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.05);
+    border-radius: 8px;
+    outline: 1px solid rgb(182, 182, 182);
+    box-sizing: border-box;
+}
+.input_fn input, .input_ln input, .input_for_email input, .input_for_phone input, .input_for_password input {
+    width: 90%;
+    padding: 10px;
+}
+.email_input, .phone_input, .fn_input, .ln_input, .password_input  {
+    padding: 10px;
+}
+#script_form {
+    width: 100%;
+    padding: 30px;
+}
+#script_form div {
+    width: 60%;
+    justify-self: center;
+}
+.btndiv button{
+    justify-self: center;
+    width: 10%;
 }
