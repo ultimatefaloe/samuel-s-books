@@ -1,34 +1,18 @@
-html {
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
 }
-body {
-    height: 100%;
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.buttons {
-    display: grid;
-    place-items: center;
-    height: 100%;
-}
-#screenInput, #screenResult{
-    height: 40px;
-    overflow-x: hidden;
-    border: 1px solid rgb(99, 6, 6);
-}
-table {
-    border: 1px solid rgb(99, 6, 6);
-}
-button {
-    border-style: none;
-    background-color: rgb(95, 3, 3);
-    color: rgb(255, 255, 255);
-    transition: 0.2s all ease-out;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: rgb(235, 118, 118);
-}
-#equal {
-    height: 50px;
-    width: 30px;
-    font-size: 20px;
+.container {
+    padding: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px #5b5a5a;
 }
