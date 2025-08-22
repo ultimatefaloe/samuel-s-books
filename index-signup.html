@@ -7,27 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left_nav">
-                <h1>📖 Samuel's book</h1>
-            </div>
-            <div class="right_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index-product.html">Products</a></li>
-                    <li id="cart"><a href= "#">🛒</a></li>
-                    <li id="profile"><a href="index-profile.html">👤</a></li>
-                    <li id="sign_in"><a href="#">Sign in</a></li>
-                </ul>
-            </div>
-            <div class="menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        <nav>
-    </header>
+    <!-- Passing header like react props -->
+    <header id="header"></header>
+    <!-- Passing header like react props -->
     <section class="sign_up_hero">
         <div class="sign_up_header">
             <h1>Sign Up</h1>
@@ -35,68 +17,90 @@
         <div class="sign_up_description">
             <p>Join Samuel's Book</p>
         </div>
-        <div class="sign_up_form_and_action">
-            <form action="">
-                <div class="sign_up_form_top">
-                    <div class="firstname_input">
-                        <div class="firstname">
-                            <label for="firstname">First Name</label>
+        <form action="" class="profile_form" id="form">
+            <table class="">
+                <tr>
+                    <td>
+                        <div class="fname_i">
+                            <div class="firstname">
+                                <label for="firstname">First Name</label>
+                            </div>
+                            <div class="input_for_firstname">
+                                <input type="text" name="firstName" id="firstName" value="">
+                            </div>
                         </div>
-                        <div class="input_for_firstname">
-                            <input type="text" name="firstName" id="firstName">
+                    </td>
+                    <td>
+                        <div class="lname_i">
+                            <div class="lastname">
+                                <label for="lastname">Last Name</label>
+                            </div>
+                            <div class="input_for_lastname">
+                                <input type="text" name="lastName" id="lastName" value="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="lastname_input">
-                        <div class="lastname">
-                            <label for="lastname">Last Name</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="email">
+                            <label for="email">Email Address</label>
                         </div>
-                        <div class="input_for_lastname">
-                            <input type="text" name="lastName" id="lastName">
+                        <div class="input_for_email">
+                            <input type="email" name="email" id="email">
                         </div>
-                    </div>
-                </div>
-                <div class="email_input">
-                    <div class="email">
-                        <label for="email">Email Address</label>
-                    </div>
-                    <div class="input_for_email">
-                        <input type="email" name="email" id="email">
-                    </div>
-                </div>
-                <div class="phone_input">
-                    <div class="phone">
-                        <label for="phone-number">Phone Number</label>
-                    </div>
-                    <div class="input_for_phone">
-                        <input type="tel" name="phone" id="name">
-                    </div>
-                </div>
-                <div class="password_input">
-                    <div class="password">
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="input_for_password">
-                        <input type="password" name="password" id="password">
-                    </div>
-                </div>
-                <div class="confirm_password_input">
-                    <div class="confirm_password">
-                        <label for="confirm_password">Confirm Password</label>
-                    </div>
-                    <div class="input_for_confirm_password">
-                        <input type="password" name="password" id="password">
-                    </div>
-                </div>
-                <div class="sign_up_button">
-                    <button>Sign up</button>
-                </div>
-            </form>
-            <div class="sign_in_footer">
-                <div class="sign_in_sign_up">
-                    <p>Already have an account? <a href="index-signin.html">Sign in</a></p>
-                </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="phone_input">
+                            <div class="phone">
+                                <label for="phone-number">Phone Number</label>
+                            </div>
+                            <div class="input_for_phone">
+                                <input type="tel" name="phone" id="name">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="password_input">
+                            <div class="password">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="input_for_password">
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="confirm_password_input">
+                            <div class="confirm_password">
+                                <label for="confirm_password">Confirm Password</label>
+                            </div>
+                            <div class="input_for_confirm_password">
+                                <input type="password" name="confirm_password" id="confirm_password">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="sign_up_button">
+                <button>Sign up</button>
+            </div>
+        </form>
+        <div class="sign_in_footer">
+            <div class="sign_in_sign_up">
+                <p>Already have an account? <a href="index-signin.html">Sign in</a></p>
             </div>
         </div>
     </section>
+    <section id="books" class="nodisplay">
+        
+    </section>
+    <script src="./sb.js"></script>
 </body>
 </html>

@@ -7,27 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left_nav">
-                <h1>📖 Samuel's book</h1>
-            </div>
-            <div class="right_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index-product.html">Products</a></li>
-                    <li id="cart"><a href= "#">🛒</a></li>
-                    <li id="profile"><a href="index-profile.html">👤</a></li>
-                    <li id="sign_in"><a href="#">Sign in</a></li>
-                </ul>
-            </div>
-            <div class="menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        <nav>
-    </header>
+    <!-- Passing header like react props -->
+    <header id="header"></header>
+    <!-- Passing header like react props -->
+
     <section class="sign_in_hero">
         <div class="sign_in_header">
             <h1>Sign In</h1>
@@ -69,5 +52,9 @@
             </div>
         </div>
     </section>
+    <section id="books" class="nodisplay">
+        
+    </section>
+    <script src="./sb.js"></script>
 </body>
 </html>

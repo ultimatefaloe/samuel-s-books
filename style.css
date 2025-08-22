@@ -60,8 +60,11 @@ header {
 }
 nav {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-around ;
     align-items: center;
+}
+.right_nav ul{
+    list-style: none;
 }
 .right_nav ul li {
     display: inline-block; 
@@ -90,7 +93,7 @@ nav {
     width: 100%;
 }
 .right_nav {
-    margin-left: 500px;
+    /* margin-left: 500px; */
 }
 .menu{
     display: none;
@@ -451,12 +454,12 @@ footer {
     width: 90%;
     padding: 10px 10px;
 }
-.email_input, .phone_input, .address_input, .password_input  {
+.email_input, .phone_input, .confirm_password_input, .password_input  {
     padding: 10px 0;
 }
-.input_for_email input, .input_for_phone input, .input_for_address input, .input_for_password {
+.input_for_email input, .input_for_phone input, .input_for_confirm_password input, .input_for_password input {
     width: 95%;
-    padding: 10px 10px;
+    padding: 10px 10px; 
 }
 table {
     width: 100%;
@@ -599,11 +602,11 @@ table {
 }
 .sign_in_hero, .sign_up_hero{
     background-color: #fff;
-    width: fit-content;
+    /* width: fit-content; */
     justify-self: center;
     align-self: center;
     padding: 30px;
-    width: 40%;
+    width: 50%;
 }
 .sign_in_header h1, .sign_up_header h1 {
     justify-self: center;
@@ -658,7 +661,7 @@ table {
     padding: 10px;
 }
 .input_for_password input, .input_for_confirm_password input {
-    width: 100%;
+    width: 95%;
     height: 37px;
 }
 .sign_up_form_top{
@@ -667,10 +670,53 @@ table {
     justify-content: space-between;
     padding-bottom: 10px;
 }
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar {
+    position: absolute;
+    top: 45px;
+    right: -200px;
+    background: rgba(255, 255, 255, 0.3); /* transparent background */
+    backdrop-filter: blur(10px);   
+    padding: 0px;
+    height: 100vh;
+}
+.menubar ul li a {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content ;
+}
+.menubar ul li {
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.menubar ul {
+    list-style: none;
+}
+.nodisplay {
+    display: none !important;
+}
+#openMenu {
+    position: absolute;
+    right: 10px;
+}
+
 @media screen and (max-width: 786px) {
+    .nodisplay {
+        display: none !important;
+    }
+    nav{
+        justify-content: space-between;
+    }
    .hero {
     display: block;
    } 
+   .right_hero{
+    display: none;
+   }
    .featured_books {
     display: block;
    }
@@ -682,9 +728,6 @@ table {
    }
    .footer_top {
     display: block;
-   }
-   .right_nav {
-    display: none;
    }
    .menu {
     display: block;
@@ -726,5 +769,9 @@ table {
     }
     .hero_form_section_and_account_stats_and_quick_actions {
         display: block;
+    }
+    #books {
+        display: flex;
+        flex-wrap: wrap;
     }
 }

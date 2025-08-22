@@ -1,0 +1,43 @@
+<nav>
+    <div class="flex">
+        <div class="left_nav">
+            <h1>📖 Samuel's book</h1>
+        </div>
+        <div class="icon" id="openMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index-product.html">Products</a></li>
+            <li id="cart"><a href="#">🛒</a></li>
+            <li id="profile"><a href="index-profile.html">👤</a></li>
+            <li id="sign_in"><a href="index-signin.html">Sign in</a></li>
+        </ul>
+    </div>
+</nav>
+
+ positon: abusolute
+ hieght: 100vh
+ width 100px
+ z-index
+ top 0
+ //right
+
+ let isOpen = false
+openMenu = document.getElementById('openMenu')
+menu = document.getElementById('menu')
+
+openMenu.addEventListener('click', ()=>{
+    isOpen= isOpen ? false : true;
+    menu.style.right = isOpen ? "-100px" : "0";
+
+
+})
+
+ 
+

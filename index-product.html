@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products page - Samuel's Book</title>
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        #books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            gap: 10px;
+            padding: 10px
+        }
+        .entire_books {
+            margin-top: 5px;
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+            position: relative;
+            border-radius: 10px;
+            justify-self: center;
+        }
+        .entire_books {
+            width: 300px;
+        }
+        .entire_books .image {
+            height: 200px;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .entire_books h2 {
+            justify-self: center;
+            padding: 10px;
+        }
+        #bd {   
+            margin-left: 20px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        #price_btn {
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+        }
+        #price_btn div {
+            margin-right: 70px;
+        }
+        #price_btn button {
+            margin-left: 70px;
+        }
+        #floatText {
+            background-color: rgb(196, 196, 255);
+            width: fit-content;
+            padding: 5px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left_nav">
-                <h1>📖 Samuel's book</h1>
-            </div>
-            <div class="right_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index-product.html">Products</a></li>
-                    <li id="cart"><a href= "#">🛒</a></li>
-                    <li id="profile"><a href="index-profile.html">👤</a></li>
-                    <li id="sign_in"><a href="index-signin.html">Sign in</a></li>
-                </ul>
-            </div>
-            <div class="menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        <nav>
-    </header>
+    <!-- Passing header like react props -->
+    <header id="header"></header>
+    <!-- Passing header like react props -->
+
+    
     <section class="head">
         <div class="head_title">
             <h3>Samuel's Book</h3>
@@ -51,7 +92,10 @@
             </div>
         </div>
     </section>
-    <section class="featured">
+    <section id="books">
+        
+    </section>
+    <!-- <section class="featured">
         <div class="featured_head">
             <h2>Featured Books</h2>
         </div>
@@ -225,7 +269,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <footer>
         <div class="footer_top">
             <div class="footer_left">
@@ -246,5 +290,7 @@
             <h3>© 2024 Samuel's Book. All rights reserved. | Privacy Policy | Terms of Service</h3>
         </div>
     </footer>
+
+    <script src="./sb.js"></script>
 </body>
 </html>
