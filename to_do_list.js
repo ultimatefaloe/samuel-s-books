@@ -21,14 +21,14 @@ tasks.unshift(task);
 //     localStorage.setItem("tasks", JSON.stringify(tasks));
 //     input.value = " ";
 //   }
-let reloadedtask = localStorage.getItem("tasks");  
+let reloadedtask = localStorage.getItem("taskValue");  
 tasks = JSON.parse(reloadedtask);
 
 if (tasks !==null && tasks) {
     tasks.forEach(e => {
       display.innerHTML += `
           <div class="">
-              <p>Task ${index}: ${tasks}</p>
+              <p>Task ${index}: ${task}</p>
               <form id="deleteBtn_${index}" type="submit">X</form>
           </div>
       `;
