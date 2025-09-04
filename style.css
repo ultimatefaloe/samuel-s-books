@@ -40,9 +40,9 @@ button {
 }
 body {
     margin-top: 50px;   
-    background-color: #fff;
-    background: linear-gradient(to top right, rgb(255, 248, 248), rgb(8, 8, 56));
-    box-shadow: 1px 2px 8px 2px #808080ab;
+    background-color: #efeef7;
+    /* background: linear-gradient(to top right, rgb(255, 248, 248), rgb(8, 8, 56)); */
+    /* box-shadow: 1px 2px 8px 2px #808080ab; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,9 +77,9 @@ nav {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding: 10px;
-    transition: 1s all ease-out;
+    transition: 0.5s all ease-out;
 }
-.right_nav ul li a::before{
+/* .right_nav ul li a::before{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -87,9 +87,9 @@ nav {
     width: 0;
     height: 3px;
     background-color: #060635; ;
-}
+} */
 .right_nav ul li a:hover{
-    color: #e1e1f7;
+    color: #12125ab2;
     width: 100%;
 }
 .right_nav {
@@ -142,18 +142,23 @@ nav {
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
+.action {
+    padding: 20px 0px 0px 0px;
+}
 .browse_products {
     padding: 5px;
 }
 .view_cart {
     padding: 5px;
 }
+.browse_products:hover button {
+    background-color:  #12125a8e;
+}
 .browse_products button {
     width: 230px;
     height: 44px;
     border-style: none;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 8px;
     background-color:  #12125abd;
     color: #fff;
 }
@@ -173,8 +178,7 @@ nav {
     width: 150px;
     height: 44px;
     border-style: none;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 8px;
     border: 1px solid rgb(24, 17, 134) ;
 }
 .right_hero{
@@ -399,6 +403,7 @@ footer {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 20px;
+    width: 80%;
 }
 .hero_search {
     padding: 0px 15px;
@@ -432,6 +437,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 80%;
+    height: 100%;
     justify-self: center;
 }
 .whole {
@@ -448,16 +454,26 @@ footer {
 .profile_form {
     padding: 20px;
     background-color: #fff;
+    height: 90%;
+}
+.profile_form table {
     height: 100%;
+}
+.profile_form div button {
+    justify-self: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #d2dbf8;
+    color: #12125a;
 }
 .input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input {
     width: 90%;
     padding: 10px 10px;
 }
-.email_input, .phone_input, .confirm_password_input, .password_input  {
+.email_input, .phone_input, .confirm_password_input, .password_input, .address_input  {
     padding: 10px 0;
 }
-.input_for_email input, .input_for_phone input, .input_for_confirm_password input, .input_for_password input {
+.input_for_email input, .input_for_phone input, .input_for_address input, .input_for_confirm_password input, .input_for_password input {
     width: 95%;
     padding: 10px 10px; 
 }
@@ -466,12 +482,12 @@ table {
 }
 .account_stats_and_quick_actions {
     display: grid;
-    margin: 5px 5px 5px 10px;
+    /* margin: 5px 5px 5px 10px; */
 }
 .account_stats{
     background-color: #fff;
     padding: 30px;
-    margin: opx 10px 10px 10px;
+    margin: 0px 0px 10px 10px;
 }
 .account_stats_head h3 {
     font-size: 28px;
@@ -521,7 +537,7 @@ table {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .quick_actions {
-    margin: 10px;
+    margin: 10px 0px 10px 10px;
     background-color: #fff;
     padding: 20px;
 }
@@ -546,18 +562,22 @@ table {
 }
 .footer_order_history {
     background-color: #fff;
+    height: fit-content;
+    width: 80%;
+    justify-self: center;
 }
 .footer_order_history_header {
     padding: 20px;
 }
 .footer_order_history_header h3 {
     font-size: 30px;
+    justify-self: center;
     color: #12125a;
     align-self: center;
 }
 .order_1 {
     background-color: #fff;
-    box-shadow: 3px 3px 8px 2px gray;
+    box-shadow: 3px 3px 8px 2px #8080803b;
     padding: 15px;
     margin: 10px;
 }
@@ -590,13 +610,13 @@ table {
 }
 .order_2 {
     background-color: #fff;
-    box-shadow: 3px 3px 8px 2px gray;
+    box-shadow: 3px 3px 8px 2px #8080803b;
     padding: 15px;
     margin: 10px;
 }
 .order_3 {
     background-color: #fff;
-    box-shadow: 3px 3px 8px 2px gray;
+    box-shadow: 3px 3px 8px 2px #8080803b;
     padding: 15px;
     margin: 10px;
 }
@@ -631,11 +651,15 @@ table {
     padding: 10px;
     margin-left: 40px;
     border-radius: 10px;
-    background-color: #8181c9;
+    background-color: #8181c9 !important;
     box-shadow: 3px 3px 8px 2px rgba(128, 128, 128, 0.363);
 }
-.sign_in_button button:hover, .sign_up_button button:hover{
-     background-color: #a0a0f7;
+.sign_in_button button:hover{
+     background-color: #8181c996 !important  ;
+     box-shadow: 0px 4px 8px 2px rgba(128, 128, 128, 0.363);
+}
+.sign_up_button button:hover {
+     background-color: #8181c9a2!important;
      box-shadow: 0px 4px 8px 2px rgba(128, 128, 128, 0.363);
 }
 .sign_in_footer {
@@ -675,6 +699,76 @@ table {
     justify-content: space-between;
     align-items: center;
 }
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 10px;
+    padding: 10px
+}
+.entire_books {
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 300px; 
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s all ease-out;
+    box-shadow: 3px 3px 8px 2px rgba(128, 128, 128, 0.103);
+    justify-self: center;
+}
+.entire_books:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0px 10px 20px 2px rgba(128, 128, 128, 0.37);
+}
+.image img {
+    transition: 0.5s all ease-out;
+    position: absolute;
+}
+.entire_books:hover img {
+    transform: scale(110%);
+}
+.entire_books .image {
+    height: 170px;  
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.entire_books h2 {
+    justify-self: center;
+    padding: 10px;
+}
+#bd {   
+    margin-left: 20px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    justify-self: left;
+    align-self: center;
+}
+#price_btn {
+    display: flex;
+    justify-content: space-around ; 
+    align-items: center;
+}
+#price_btn button {
+    padding: 10px;
+    background-color: rgb(196, 196, 255);
+    border-radius: 8px;
+}
+#price_btn button:hover {
+    background-color: rgba(196, 196, 255, 0.603);
+}
+#floatText {
+    background-color: rgb(196, 196, 255);
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 10px;
+}
 .menubar {
     position: absolute;
     top: 45px;
@@ -683,11 +777,15 @@ table {
     backdrop-filter: blur(10px);   
     padding: 0px;
     height: 100vh;
+    transition: 0.7s all ease-in-out;
 }
 .menubar ul li a {
     text-decoration: none;
     width: fit-content;
     height: fit-content ;
+}
+.menubar ul li a:active {
+    color: rgb(1, 4, 12);
 }
 .menubar ul li {
     margin-top: 20px;
@@ -702,6 +800,9 @@ table {
 #openMenu {
     position: absolute;
     right: 10px;
+}
+.price {
+    color: rgb(44, 39, 122);
 }
 
 @media screen and (max-width: 786px) {
@@ -751,9 +852,11 @@ table {
    }
    .hero_header_nav {
     margin: 15px;
+    width: fit-content;
+    justify-self: center;
    }
    .hero_header_nav a {
-    padding: 5px;
+    /* padding: 5px; */
    }
    .featured {
     padding: 0px 0px 0px 15px;
@@ -769,6 +872,39 @@ table {
     }
     .hero_form_section_and_account_stats_and_quick_actions {
         display: block;
+    }
+    .account_stats_and_quick_actions {
+        margin: 10px 0px;
+    }
+    .account_stats {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .account_stats h3 {
+        justify-self: center;
+        padding: 20px;
+    }
+    .account_stats_content {
+        padding: 10px;
+    }
+    .quick_actions {
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+    .quick_actions_head {
+        width: 100%;
+    }
+    .quick_actions h3 {
+        justify-self: center;
+        padding: 15px;
+    }
+    .quick_actions_content {
+        width: 100%;
+    }
+    .quick_actions_content div {
+        justify-self: center;
     }
     #books {
         display: flex;

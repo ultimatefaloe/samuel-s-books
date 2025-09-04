@@ -14,10 +14,10 @@ const books = [
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "Adventure",
+        image: "./adventure.jpg",
+        title: "Adventure Books",
+        description: "From mountains to mysteries…<br>From quests to courage…<br>Your adventure begins here..",
         price: 35000
     },
     {
@@ -28,44 +28,45 @@ const books = [
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "Motivational",
+        image: "./motivational.jpeg",
+        title: "Motivational Books",
+        description: "Fuel your hustle. <br>Spark your mindset.<br>A motivational book can change your game.",
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "Spiritual",
+        image: "./spiritual.jpg",
+        title: "Spiritual Books",
+        description: "Calm your mind. <br>Strengthen your spirit<br>Let wisdom guide your journey.",
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "Leadership",
+        image: "./leadership.jpeg",
+        title: "Leadership Books",
+        description: "Strong minds <br>Bold decisions.<br>Leadership begins on the page.",
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "How-to books",
+        image: "./howto.jpeg",
+        title: "How-to books Books",
+        description: "Why guess… <br>when you can know how?<br>Your “how” starts here.",
         price: 35000
     },
     {
-        category: "Romance",
-        image: "./Romance.jpg",
-        title: "Romance Books",
-        description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
+        category: "Songbooks",
+        image: "./songbooks.jpg",
+        title: "Songbooks Books",
+        description: "Learn the songs you love. <br>Share the music you feel.<br>Songbooks make it simple.",
         price: 35000
     }
 ]
 
 const header = document.getElementById('header');
 let isMobile = true
+
 
 // Run once on page load
 function handleScreenChange(e) {
@@ -94,6 +95,15 @@ function handleScreenChange(e) {
         </ul>
     </div>
     `
+    let isOpen = true 
+    const openMenu = document.getElementById('openMenu');
+    const menubar = document.getElementById('menuBar');
+
+    openMenu.addEventListener('click', ()=> {
+        isOpen = isOpen ? false : true;
+        menubar.style.right = isOpen ? "-200px" : "0px"
+    })
+
   } else {
     // Screen is > 768px
       header.innerHTML = `
@@ -120,6 +130,8 @@ function handleScreenChange(e) {
   }
 }
 
+
+
 // Create the media query
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
@@ -130,14 +142,7 @@ handleScreenChange(mediaQuery);
 mediaQuery.addEventListener("change", handleScreenChange);
 
 
-let isOpen = true
-const openMenu = document.getElementById('openMenu')
-const menubar = document.getElementById('menuBar')
 
-openMenu.addEventListener('click', ()=> {
-    isOpen = isOpen ? false : true;
-    menubar.style.right = isOpen ? "-200px" : "0px"
-})
 
 // if(mediaQuery){
 //     header.innerHTML = `

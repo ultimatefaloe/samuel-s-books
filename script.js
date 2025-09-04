@@ -23,7 +23,6 @@
 //   });
 // });
 
-<<<<<<< HEAD
 
 let num = [1, 2, 3, 4, 4, 5, 5]
 
@@ -44,7 +43,6 @@ let num = [1, 2, 3, 4, 4, 5, 5]
 //   document.write(`This is execute first <br>`)
 //   i++
 // } while (i<= num.length);
-=======
 const Person = {
   lname: "ULTIMATE",
   fname: "Faloe",
@@ -415,4 +413,3 @@ const html =
   ))
 
 DOM.innerHTML = html
->>>>>>> 170ff5dd9c4ff6214b1eabc1aecdef4eb740f830
