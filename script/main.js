@@ -1,63 +1,63 @@
 const books = [
     {
         category: "Inspirational",
-        image: "./inspirational.jpg",
+        image: "../images/inspirational.jpg",
         title: "Inspirational Books",
         description: "One book can change your mindset. <br> One mindset can change your life. <br> Discover your next read now!",
         price: 35000
     },
     {
         category: "Educational",
-        image: "./Educational.jpg",
+        image: "../images/Educational.jpg",
         title: "Educational Books",
         description: "Turn pages into power.<br> Master any subject, anywhere.<br>Success is just a book away",
         price: 35000
     },
     {
         category: "Adventure",
-        image: "./adventure.jpg",
+        image: "../images/adventure.jpg",
         title: "Adventure Books",
         description: "From mountains to mysteries…<br>From quests to courage…<br>Your adventure begins here..",
         price: 35000
     },
     {
         category: "Romance",
-        image: "./Romance.jpg",
+        image: "../images/Romance.jpg",
         title: "Romance Books",
         description: "Fall in love again… <br>One chapter at a time.<br>Your next great love story is waiting.",
         price: 35000
     },
     {
         category: "Motivational",
-        image: "./motivational.jpeg",
+        image: "../images/motivational.jpeg",
         title: "Motivational Books",
         description: "Fuel your hustle. <br>Spark your mindset.<br>A motivational book can change your game.",
         price: 35000
     },
     {
         category: "Spiritual",
-        image: "./spiritual.jpg",
+        image: "../images/spiritual.jpg",
         title: "Spiritual Books",
         description: "Calm your mind. <br>Strengthen your spirit<br>Let wisdom guide your journey.",
         price: 35000
     },
     {
         category: "Leadership",
-        image: "./leadership.jpeg",
+        image: "../images/leadership.jpeg",
         title: "Leadership Books",
         description: "Strong minds <br>Bold decisions.<br>Leadership begins on the page.",
         price: 35000
     },
     {
         category: "How-to books",
-        image: "./howto.jpeg",
+        image: "../images/howto.jpeg",
         title: "How-to books Books",
         description: "Why guess… <br>when you can know how?<br>Your “how” starts here.",
         price: 35000
     },
     {
         category: "Songbooks",
-        image: "./songbooks.jpg",
+        image: "../images/songbooks.jpg",
         title: "Songbooks Books",
         description: "Learn the songs you love. <br>Share the music you feel.<br>Songbooks make it simple.",
         price: 35000
@@ -88,11 +88,11 @@ function handleScreenChange(e) {
     </nav>
     <div class="menubar" id="menuBar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index-product.html">Products</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./pages/product.html">Products</a></li>
             <li id="cart"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><circle cx="7.5" cy="18.5" r="1.5" fill="#374151"/><circle cx="16.5" cy="18.5" r="1.5" fill="#374151"/><path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 5h2l.6 3m0 0L7 15h10l2-7z"/></g></svg></a></li>
-            <li id="profile"><a href="index-profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="#374151" d="M21 12a8.96 8.96 0 0 1-1.526 5.016A8.99 8.99 0 0 1 12 21a8.99 8.99 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z" stroke-width="1"/><path fill="#374151" d="M13.5 9a1.5 1.5 0 0 1-1.5 1.5v1A2.5 2.5 0 0 0 14.5 9zM12 10.5A1.5 1.5 0 0 1 10.5 9h-1a2.5 2.5 0 0 0 2.5 2.5zM10.5 9A1.5 1.5 0 0 1 12 7.5v-1A2.5 2.5 0 0 0 9.5 9zM12 7.5A1.5 1.5 0 0 1 13.5 9h1A2.5 2.5 0 0 0 12 6.5zM5.166 17.856l-.48-.142l-.077.261l.177.207zm13.668 0l.38.326l.177-.207l-.078-.261zM9 15.5h6v-1H9zm0-1a4.5 4.5 0 0 0-4.313 3.214l.958.285A3.5 3.5 0 0 1 9 15.5zm3 6a8.48 8.48 0 0 1-6.455-2.97l-.759.652A9.48 9.48 0 0 0 12 21.5zm3-5a3.5 3.5 0 0 1 3.355 2.5l.958-.286A4.5 4.5 0 0 0 15 14.5zm3.455 2.03A8.48 8.48 0 0 1 12 20.5v1a9.48 9.48 0 0 0 7.214-3.318z"/></g></svg></a></li>
-            <li id="sign_in"><a href="index-signin.html">Sign in</a></li>#3f7863
+            <li id="profile"><a href="./pages/profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="#374151" d="M21 12a8.96 8.96 0 0 1-1.526 5.016A8.99 8.99 0 0 1 12 21a8.99 8.99 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z" stroke-width="1"/><path fill="#374151" d="M13.5 9a1.5 1.5 0 0 1-1.5 1.5v1A2.5 2.5 0 0 0 14.5 9zM12 10.5A1.5 1.5 0 0 1 10.5 9h-1a2.5 2.5 0 0 0 2.5 2.5zM10.5 9A1.5 1.5 0 0 1 12 7.5v-1A2.5 2.5 0 0 0 9.5 9zM12 7.5A1.5 1.5 0 0 1 13.5 9h1A2.5 2.5 0 0 0 12 6.5zM5.166 17.856l-.48-.142l-.077.261l.177.207zm13.668 0l.38.326l.177-.207l-.078-.261zM9 15.5h6v-1H9zm0-1a4.5 4.5 0 0 0-4.313 3.214l.958.285A3.5 3.5 0 0 1 9 15.5zm3 6a8.48 8.48 0 0 1-6.455-2.97l-.759.652A9.48 9.48 0 0 0 12 21.5zm3-5a3.5 3.5 0 0 1 3.355 2.5l.958-.286A4.5 4.5 0 0 0 15 14.5zm3.455 2.03A8.48 8.48 0 0 1 12 20.5v1a9.48 9.48 0 0 0 7.214-3.318z"/></g></svg></a></li>
+            <li id="sign_in"><a href="./pages/signin.html">Sign in</a></li>#3f7863
         </ul>
     </div>
     `
@@ -114,11 +114,11 @@ function handleScreenChange(e) {
             </div>
             <div class="right_nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index-product.html">Products</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./pages/product.html">Products</a></li>
                     <li id="cart"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><circle cx="7.5" cy="18.5" r="1.5" fill="#374151"/><circle cx="16.5" cy="18.5" r="1.5" fill="#374151"/><path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 5h2l.6 3m0 0L7 15h10l2-7z"/></g></svg></a></li>
-                    <li id="profile"><a href="index-profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="#374151" d="M21 12a8.96 8.96 0 0 1-1.526 5.016A8.99 8.99 0 0 1 12 21a8.99 8.99 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z" stroke-width="1"/><path fill="#374151" d="M13.5 9a1.5 1.5 0 0 1-1.5 1.5v1A2.5 2.5 0 0 0 14.5 9zM12 10.5A1.5 1.5 0 0 1 10.5 9h-1a2.5 2.5 0 0 0 2.5 2.5zM10.5 9A1.5 1.5 0 0 1 12 7.5v-1A2.5 2.5 0 0 0 9.5 9zM12 7.5A1.5 1.5 0 0 1 13.5 9h1A2.5 2.5 0 0 0 12 6.5zM5.166 17.856l-.48-.142l-.077.261l.177.207zm13.668 0l.38.326l.177-.207l-.078-.261zM9 15.5h6v-1H9zm0-1a4.5 4.5 0 0 0-4.313 3.214l.958.285A3.5 3.5 0 0 1 9 15.5zm3 6a8.48 8.48 0 0 1-6.455-2.97l-.759.652A9.48 9.48 0 0 0 12 21.5zm3-5a3.5 3.5 0 0 1 3.355 2.5l.958-.286A4.5 4.5 0 0 0 15 14.5zm3.455 2.03A8.48 8.48 0 0 1 12 20.5v1a9.48 9.48 0 0 0 7.214-3.318z"/></g></svg></a></li>
-                    <li id="sign_in"><a href="index-signin.html">Sign in</a></li>
+                    <li id="profile"><a href="./pages/profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path stroke="#374151" d="M21 12a8.96 8.96 0 0 1-1.526 5.016A8.99 8.99 0 0 1 12 21a8.99 8.99 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z" stroke-width="1"/><path fill="#374151" d="M13.5 9a1.5 1.5 0 0 1-1.5 1.5v1A2.5 2.5 0 0 0 14.5 9zM12 10.5A1.5 1.5 0 0 1 10.5 9h-1a2.5 2.5 0 0 0 2.5 2.5zM10.5 9A1.5 1.5 0 0 1 12 7.5v-1A2.5 2.5 0 0 0 9.5 9zM12 7.5A1.5 1.5 0 0 1 13.5 9h1A2.5 2.5 0 0 0 12 6.5zM5.166 17.856l-.48-.142l-.077.261l.177.207zm13.668 0l.38.326l.177-.207l-.078-.261zM9 15.5h6v-1H9zm0-1a4.5 4.5 0 0 0-4.313 3.214l.958.285A3.5 3.5 0 0 1 9 15.5zm3 6a8.48 8.48 0 0 1-6.455-2.97l-.759.652A9.48 9.48 0 0 0 12 21.5zm3-5a3.5 3.5 0 0 1 3.355 2.5l.958-.286A4.5 4.5 0 0 0 15 14.5zm3.455 2.03A8.48 8.48 0 0 1 12 20.5v1a9.48 9.48 0 0 0 7.214-3.318z"/></g></svg></a></li>
+                    <li id="sign_in"><a href="./pages/signin.html">Sign in</a></li>
                 </ul>
             </div>
             <div class="menu">
@@ -153,11 +153,11 @@ mediaQuery.addEventListener("change", handleScreenChange);
 //             </div>
 //             <div class="right_nav">
 //                 <ul>
-//                     <li><a href="index.html">Home</a></li>
-//                     <li><a href="index-product.html">Products</a></li>
+//                     <li><a href="/index.html">Home</a></li>
+//                     <li><a href="./pages/product.html">Products</a></li>
 //                     <li id="cart"><a href="#">🛒</a></li>
-//                     <li id="profile"><a href="index-profile.html">👤</a></li>
-//                     <li id="sign_in"><a href="index-signin.html">Sign in</a></li>
+//                     <li id="profile"><a href="./pages/profile.html">👤</a></li>
+//                     <li id="sign_in"><a href="./pages/signin.html">Sign in</a></li>
 //                 </ul>
 //             </div>
 //             <div class="menu">
@@ -183,11 +183,11 @@ mediaQuery.addEventListener("change", handleScreenChange);
 //     </nav>
 //     <div class="menubar" id="menuBar">
 //         <ul>
-//             <li><a href="index.html">Home</a></li>
-//             <li><a href="index-product.html">Products</a></li>
+//             <li><a href="/index.html">Home</a></li>
+//             <li><a href="./pages/product.html">Products</a></li>
 //             <li id="cart"><a href="#">🛒</a></li>
-//             <li id="profile"><a href="index-profile.html">👤</a></li>
-//             <li id="sign_in"><a href="index-signin.html">Sign in</a></li>
+//             <li id="profile"><a href="./pages/profile.html">👤</a></li>
+//             <li id="sign_in"><a href="./pages/signin.html">Sign in</a></li>
 //         </ul>
 //     </div>
 //     `

@@ -1,21 +1,21 @@
 const booksHome = [
     {
         category: "Inspirational",
-        image: "./inspirational.jpg",
+        image: "./images/inspirational.jpg",
         title: "Inspirational Books",
         description: "One book can change your mindset. <br> One mindset can change your life. <br> Discover your next read now!",
         price: 35000
     },
     {
         category: "Educational",
-        image: "./Educational.jpg",
+        image: "./images/Educational.jpg",
         title: "Educational Books",
         description: "Turn pages into power.<br> Master any subject, anywhere.<br>Success is just a book away",
         price: 35000
     },
     {
         category: "Adventure",
-        image: "./adventure.jpg",
+        image: "./images/adventure.jpg",
         title: "Adventure Books",
         description: "From mountains to mysteries…<br>From quests to courage…<br>Your adventure begins here..",
         price: 35000
