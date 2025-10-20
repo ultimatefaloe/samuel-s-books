@@ -7,16 +7,21 @@
 input {
     border-style: none;
     background-color: #fff;
-    box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.05);
+    /* box-shadow: 1px 1px 8px 2px rgba(128, 128, 128, 0.05); */
     border-radius: 8px;
-    outline: 1px solid rgb(182, 182, 182);
+    color: #2c5445;
+    /* outline: 1px solid rgb(182, 182, 182); */
+    border: 1px solid #e6e6e6;
     box-sizing: border-box;
 }
 table {
     height: 90%;
 }
 label {
-    color: #12125a;
+    color: #2c5445;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
 button {
     cursor: pointer;
@@ -24,7 +29,7 @@ button {
 }
 #cart :hover, #profile :hover{
     background-color: #ffc642;
-    padding: 10px;
+    /* padding: 10px;    */
     border-radius: 5px;
 }
 #sign_in :hover {
@@ -38,10 +43,14 @@ button {
     padding: 5px;
     border-radius: 5px;
 }
+.sign_options_body {
+    background-color: #fff7ed;
+}
 body {
     margin-top: 50px;   
     background-color: rgb(249 250 251);
     color: #2c5445;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji" ;
     /* background: linear-gradient(to top right, rgb(255, 248, 248), rgb(8, 8, 56)); */
     /* box-shadow: 1px 2px 8px 2px #808080ab; */
     background-position: center;
@@ -74,12 +83,13 @@ nav {
 .right_nav ul li a {
     position: relative;
     text-decoration: none;
+    justify-content: center;
     color: #374151;
     font-size: 16px;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     font-weight: 500;
     padding: 10px;
-    transition: 0.2s all ease-in;
+    /* transition: 0.2s all ; */
 }
 /* .right_nav ul li a::before{
     position: absolute;
@@ -115,6 +125,7 @@ nav {
     align-items: center;
     margin-top: 80px;
     padding: 30px;
+    justify-self: center;
 }
 .left_hero {
     justify-content: center;
@@ -363,6 +374,7 @@ footer {
 .footer_top {
     /* display: grid;
     grid-template-columns: 2fr 1fr; */
+    background-color: #fff7ed;
     padding: 5px, 80px;
 }
 .footer_left {
@@ -409,6 +421,9 @@ footer {
     justify-self: center;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
+.body_background_color {
+    background-color: #fff7ed;
+}
 .head {
     margin: 65px;
     padding-top: 40px;
@@ -417,14 +432,17 @@ footer {
     justify-items: center;
 }
 .head_title h3 {
-    font-size: 45px;
-    color: #12125a;
-    font-family: monospace;
+    font-size: 48px;
+    color: #3f7863;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .head_text {
     justify-self: center;
     justify-items: center;
     font-size: 17px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #374151;
     font-size: 20px;
     padding: 10px;
 }
@@ -437,9 +455,13 @@ footer {
     padding: 25px;
     border-radius: 20px;
     width: 80%;
+    box-shadow: 0 4px 6px -4px   #0000001a;
+    margin: 10px;
+    box-shadow: 0 10px 15px -3px #0000001a;
 }
 .hero_search {
     padding: 0px 15px;
+    width: 50%;
 }
 .search {
     background-color: #ffffff;
@@ -447,166 +469,84 @@ footer {
 }
 .search input {
     border-style: none;
-    color: #020279;
+    color: #374151;
     border-radius: 20px;
-    border-color: #3030ff;
+    border:1px solid #3f786333;
     background-color: #fff;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     padding: 10px;
-    outline-color: #020279;
-    font-size: 15px;
+    /* outline-color: #3f786333; */
+    font-size: 14px;
     width: 100%;
-    font-family: cursive;
+    box-sizing: border-box;
+    height: 40px;
+}
+.search input:focus {
+    outline-color: #3f7863;
 }
 .hero_header_nav a {
     padding: 10px;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #6666a7;
-    border-radius: 15px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #3f7863;
+    /* background-color: #3f7863; */
+    border: 1px solid #3f7863;
+    background-color: #fff;
+    border-radius: 50px;
     font-size: 15px;
-    font-family: cursive;
+    font-weight: 500;
 }
-.hero_form_section_and_account_stats_and_quick_actions {
+.hero_header_nav a:focus {
+    background-color: #3f7863;
+    color: #ffffff;
+}
+.form_order_history_account_stats_quick_actions {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    width: 80%;
-    height: 100%;
+    gap: 30px;
+    /* width: 80%;
+    height: 100%; */
     justify-self: center;
 }
 .whole {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    margin: 0px 8%;
 }
 .hero_form_header h3 {
-    font-size: 45px;
+    /* font-size: 45px;
     color: #12125a;
-    font-family: monospace;
-    padding: 5px;
-    justify-self: center;
+    font-family: monospace; */
+    /* padding-left: 2%;     */
+    margin: 30px;
+    font-size: 30px;
+    /* justify-self: center; */
+    color: #3f7863;
+    margin-top: 100px;
+    margin-left: 110px;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.profile_form {
-    padding: 20px;
-    background-color: #fff;
-    height: 90%;
-}
-.profile_form table {
-    height: 100%;
-}
-.profile_form div button {
-    justify-self: center;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #d2dbf8;
-    color: #12125a;
-}
-.input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input {
-    width: 90%;
-    padding: 10px 10px;
-}
-.email_input, .phone_input, .confirm_password_input, .password_input, .address_input  {
-    padding: 10px 0;
-}
-.input_for_email input, .input_for_phone input, .input_for_address input, .input_for_confirm_password input, .input_for_password input {
-    width: 95%;
-    padding: 10px 10px; 
-}
-table {
-    width: 100%;
-}
-.account_stats_and_quick_actions {
+.form_footer_section {
     display: grid;
-    /* margin: 5px 5px 5px 10px; */
-}
-.account_stats{
-    background-color: #fff;
-    padding: 30px;
-    margin: 0px 0px 10px 10px;
-}
-.account_stats_head h3 {
-    font-size: 28px;
-    color: #12125a;
-    align-self: center;
-}
-.total_orders {
-    justify-self: center;
-    justify-items: center;
-    width: fit-content;
-}
-.total_orders h4 {
-    font-size: 24px;
-    color: #12125a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.total_orders p {
-    font-size: 14px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}   
-.total_spent {
-    justify-self: center;
-    justify-items: center;
-    width: fit-content;
-}
-.total_spent h4 {
-    font-size: 24px;
-    color: #12125a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.total_spent p {
-    font-size: 14px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.member_since {
-    justify-self: center;
-    justify-items: center;
-    width: fit-content;
-}
-.member_since h4 {
-    font-size: 24px;
-    color: #12125a;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.member_since p {
-    font-size: 14px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.quick_actions {
-    margin: 10px 0px 10px 10px;
-    background-color: #fff;
-    padding: 20px;
-}
-.quick_actions_head {
-    width: 230px;
-}
-.quick_actions_head h3 {
-    font-size: 24px;
-    color: #12125a;
-    align-self: center;
-}
-.quick_actions_content button{
-    border-style: none;
-    background-color: #d2dbf8;
-    color: #12125a;
-    padding: 10px;
-    border-radius: 10px;
-    width: 230px;
-    font-size: 15px;
-    padding: 10px;
-    margin: 10px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 .footer_order_history {
+    border: 2px solid #e6e6e6 ;
     background-color: #fff;
+    border-radius: 8px;
     height: fit-content;
-    width: 80%;
+    width: 100%;
     justify-self: center;
 }
 .footer_order_history_header {
     padding: 20px;
 }
 .footer_order_history_header h3 {
-    font-size: 30px;
-    justify-self: center;
-    color: #12125a;
+    font-size: 24px;
+    /* justify-self: center; */
+    color: #2c5445;
     align-self: center;
+    font-weight: 600;
 }
 .order_1 {
     background-color: #fff;
@@ -614,28 +554,42 @@ table {
     padding: 15px;
     margin: 10px;
 }
-.status_delivered {
+/* .status_delivered {
     background-color: #8282ec;
     border-radius: 5px;
 }
 .status_processing {
     background-color: #fda92a;
     border-radius: 5px;
-}
+} */
 .status_processing p {
     padding: 5px;
-    color: #644311;
+    color: #854d0e;
+    font-size: 12px;
+    justify-self: center;
+    border-radius: 8px ;
+    background-color: #fef9c3;
 }
 .status_delivered p {
     padding: 5px;
-    color: #060635;
+    font-size: 12px;
+    background-color: #dcfce7;
+    border-radius: 8px ;
+    justify-self: center;
+    color: #166534;
+}
+.date p , .items p{
+    color: #4b5563;
+    font-size: 14px;
 }
 .name_date_and_price_status {
     display: flex;
     justify-content: space-between;
 }
 .price h4{
-    color: #020279;
+    color: #3f7863;
+    font-size: 16px;
+    font-weight: 600;
     padding: 5px;
 }
 .items {
@@ -653,72 +607,198 @@ table {
     padding: 15px;
     margin: 10px;
 }
+.profile_span {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+.profile_form {
+    /* border: 2px solid #e6e6e6; */
+    /* padding: 20px; */
+    border-radius: 8px;
+    background-color: #fff;
+    /* height: 90%; */
+}
+.profile_form table {
+    /* height: 100%; */
+}
+.profile_form div button {
+    justify-self: center;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    background-color: #ffffff;
+    color: #2c5445;
+}
+.input_for_firstname input, .input_for_lastname input, .input_for_city input, .input_for_state input {
+    width: 90%;
+    padding: 10px 10px;
+}
+.email_input, .phone_input, .confirm_password_input, .password_input, .address_input  {
+    padding: 10px 0;
+    color: #2c5445;
+}
+.input_for_email input, .input_for_phone input, .input_for_address input, .input_for_confirm_password input, .input_for_password input {
+    width: 95%;
+    padding: 10px 10px; 
+}
+table {
+    width: 100%;
+}
+.account_stats_and_quick_actions {
+    display: grid;
+    grid-row: 1fr 1fr;
+    height: 50%;
+    /* margin: 5px 5px 5px 10px; */
+}
+.account_stats{
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #e6e6e6 ;
+    padding: 30px;
+    margin: 0px 0px 10px 10px;
+}
+.account_stats_head h3 {
+    font-size: 24px;
+    color: #2c5445;
+    font-weight: 600;
+    align-self: center;
+}
+.total_orders ,
+.total_spent ,
+.member_since {
+    justify-self: center;
+    justify-items: center;
+    width: fit-content;
+}
+.total_orders h4,
+.total_spent h4 ,
+.member_since h4 {
+    font-size: 24px;
+    color: #3f7863;
+}
+.total_orders p , 
+.total_spent p ,
+.member_since p {
+    font-size: 14px;
+    color: #4b5563;
+}   
+.quick_actions {
+    margin: 10px 0px 10px 10px;
+    border-radius: 8px;
+    border: 2px solid #e6e6e6 ;
+    background-color: #fff;
+    padding: 20px;
+}
+.quick_actions_head {
+    width: 230px;
+}
+.quick_actions_head h3 {
+    font-size: 24px;
+    color: #2c5445;
+    font-weight: 600;
+    align-self: center;
+}
+.quick_actions_content button{
+    border-style: none;
+    border: 2px solid #e6e6e6 ;
+    background-color: #ffffff;
+    color: #2c5445;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+.quick_actions_content :hover button {
+    background-color: #ffc642;
+}
+
 .sign_in_hero, .sign_up_hero{
     background-color: #fff;
     /* width: fit-content; */
     justify-self: center;
     align-self: center;
+    box-sizing: border-box;
     padding: 30px;
     width: 50%;
+    border: 1px solid #e6e6e6 ;
+    border-radius: 8px;
+}
+.sign_in_hero label, .sign_up_hero label {
+    color: #2c5445;
+    font-size: 14px;
+    font-weight: 500;
 }
 .sign_in_header h1, .sign_up_header h1 {
     justify-self: center;
-    font-size: 25px;
-    color: #060635;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #3f7863;
+    font-weight: 700;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .sign_in_description p, .sign_up_description p {
     justify-self: center;
-    font-size: 15px;
+    font-size: 16px;
     padding: 20px;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b5563;
+    /* font-style: italic; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .sign_in_button, .sign_up_button{
     justify-self: center;
     padding: 15px;
     width: 100%;
+    color: oklch(98.511% 0.00011 271.152) ;
 }
 .sign_in_button button, .sign_up_button button {
     width: 80%;
     padding: 10px;
     margin-left: 40px;
+    color: #fafafa !important;
     border-radius: 10px;
-    background-color: #8181c9 !important;
+    background-color: #3f7863 !important;
     box-shadow: 3px 3px 8px 2px rgba(128, 128, 128, 0.363);
 }
 .sign_in_button button:hover{
-     background-color: #8181c996 !important  ;
+     background-color: #3f7863e6 !important  ;
      box-shadow: 0px 4px 8px 2px rgba(128, 128, 128, 0.363);
 }
 .sign_up_button button:hover {
-     background-color: #8181c9a2!important;
+     background-color: #3f7863e6!important;
      box-shadow: 0px 4px 8px 2px rgba(128, 128, 128, 0.363);
 }
-.sign_in_footer {
+.sign_in_footer p, .sign_up_footer p {
     justify-content: center;
+    font-size: 14px !important ;
 }
 .sign_in_sign_up p {
     justify-self: center;
+    color: #4b5563;
+    font-size: 16px;
     font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .forgot_password {
     justify-self: center;
     font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .sign_in_email_input, .sign_in_password_input {
     padding: 10px;
 }
 .email_password input {
-    font-size: 15px;
+    font-size: 14px;
     width: 90%;
+    outline-color:#3f7863 ;
     height: auto;
     padding: 10px;
 }
 .input_for_password input, .input_for_confirm_password input {
     width: 95%;
+    outline-color:#3f7863 ;
     height: 37px;
 }
 .sign_up_form_top{
@@ -847,28 +927,49 @@ table {
 }
 .menubar {
     position: absolute;
-    top: 45px;
-    right: -200px;
-    background: rgba(255, 255, 255, 0.3); /* transparent background */
-    backdrop-filter: blur(10px);   
+    /* top: 45px; */
+    top: -700px;
+    /* background: rgba(255, 255, 255, 0.3); */     /* transparent background */
+    /* backdrop-filter: blur(10px);    */
     padding: 0px;
-    height: 100vh;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    z-index: -81;
+    width: 100%;
+    /* height: 100vh; */
     transition: 0.7s all ease-in-out;
 }
 .menubar ul li a {
     text-decoration: none;
-    width: fit-content;
+    /* width: fit-content; */
+    font-size: 16px;
+    font-weight: 500;
     height: fit-content ;
+    color: #374151;
 }
 .menubar ul li a:active {
     color: rgb(1, 4, 12);
 }
+.menubar ul li a:hover{
+    color: #3f7863;
+    /* background-color: #ffc642; */
+    width: 100%;
+}
+.menubar ul li:hover {
+    background-color: #ffc642;
+    width: 100%;
+}
 .menubar ul li {
     margin-top: 20px;
     margin-right: 30px;
+    width: 100%;
+    padding: 5px;
 }
 .menubar ul {
     list-style: none;
+    width: 100%;
+    /* display: flex; */
+    padding: 10px;
 }
 .nodisplay {
     display: none !important;
@@ -948,7 +1049,7 @@ table {
     .sign_in_hero {
         width: 70%;
     }
-    .hero_form_section_and_account_stats_and_quick_actions {
+    .form_order_history_account_stats_quick_actions {
         display: block;
     }
     .account_stats_and_quick_actions {
